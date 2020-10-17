@@ -1,0 +1,17 @@
+@keyframes slideInVertical {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideOutVertical {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}

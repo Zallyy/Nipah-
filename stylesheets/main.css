@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=NTR&family=Raleway:wght@300;400;700&display=swap");
+.primary-btn {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 63px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  background: #4f38a4;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+
+.primary-btn:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.divider div {
+  background: #4f38a4;
+}
+
+.divider .left, .divider .right {
+  margin: 0 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.divider .mid {
+  height: 8px;
+  width: 25px;
+  border-radius: 50% 5px 5px 50%;
+}
+
+.logo {
+  position: absolute;
+  -ms-flex-item-align: center;
+      align-self: center;
+  bottom: -208px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 0;
+}
+
+.logo img {
+  position: absolute;
+  top: -208px;
+  margin-left: 40px;
+  z-index: 2;
+  width: 80%;
+  height: auto;
+}
+
+.logo .circle {
+  width: 416px;
+  height: 416px;
+  border-radius: 50%;
+  background: #4f38a4;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  padding: 10px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #4f38a4;
+  border: 1px solid white;
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.card .img-container {
+  border-radius: 10px;
+  width: 75px;
+  height: 75px;
+  position: relative;
+}
+
+.card .img-container img {
+  border-radius: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card .title {
+  font-size: .95em;
+  margin-left: 5px;
+}
+
+.card .view-more {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: .90em;
+  opacity: 90%;
+}
+
+@-webkit-keyframes slideInVertical {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes slideInVertical {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slideOutVertical {
+  from {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  to {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@keyframes slideOutVertical {
+  from {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  to {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  max-height: 100vh;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  top: 0;
+  position: absolute;
+  width: 100vw;
+  max-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+}
+
+a {
+  z-index: 4;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.content-menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #4f38a4;
+}
+
+.content-menu .page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-menu .page:nth-child(1) {
+  margin-top: 50px;
+}
+
+.content-menu .page .menu-circle {
+  margin-right: 10px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: #4f38a4;
+}
+
+.content-menu .page h2 {
+  margin-bottom: 50px;
+}
+
+nav {
+  position: relative;
+  background: #4f38a4;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 81px;
+  width: 100%;
+}
+
+nav h1 {
+  font-family: "NTR", sans-serif;
+  font-size: 2em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+nav .menu {
+  position: absolute;
+  -ms-flex-item-align: center;
+      align-self: center;
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav .menu .top-bot-menu {
+  border-radius: 8px;
+  background: white;
+  width: 37px;
+  height: 7px;
+  margin: 5px 0;
+}
+
+nav .menu .middle-menu {
+  border-radius: 8px;
+  background: white;
+  width: 32px;
+  height: 7px;
+}
+
+nav .menu:hover {
+  cursor: pointer;
+  opacity: 70%;
+}
+
+.content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+  background: white;
+  border-radius: 60px 60px 0 0;
+  padding: 33px 50px;
+  -webkit-animation: .5s ease-in slideInVertical;
+          animation: .5s ease-in slideInVertical;
+}
+
+.content .call-to-action {
+  z-index: 3;
+  font-size: 1.3em;
+  color: #4f38a4;
+  font-weight: normal;
+  margin-bottom: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.fill-hole {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #4f38a4;
+  z-index: -1;
+}
+
+.inactive {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
