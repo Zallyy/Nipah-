@@ -1,6 +1,6 @@
-@import '1-partials/_variables';
-@import '1-partials/utilities';
-@import '1-partials/animations';
+@import 'partials/_variables';
+@import 'partials/utilities';
+@import 'partials/animations';
 
 * {
     box-sizing: border-box;
@@ -33,7 +33,7 @@ a {
 }
 
 a:visited {
-    color: inherit;
+    color: $primary-color;
 }
 
 .content-menu {
@@ -131,6 +131,10 @@ nav {
         font-weight: normal;
         margin-bottom: 50px;
         align-self: center;
+    }
+
+    .top:hover .fa-caret-down{
+        color: lightblue;
     }
 }
 

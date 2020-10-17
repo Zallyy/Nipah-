@@ -202,7 +202,7 @@ a {
 }
 
 a:visited {
-  color: inherit;
+  color: #4f38a4;
 }
 
 .content-menu {
@@ -342,6 +342,10 @@ nav .menu:hover {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.content .top:hover .fa-caret-down {
+  color: lightblue;
 }
 
 .fill-hole {
