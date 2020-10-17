@@ -83,9 +83,9 @@
   display: -ms-flexbox;
   display: flex;
   background: #4f38a4;
-  border: 1px solid white;
-  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 2px solid #ffffff;
+  -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   color: white;
   border-radius: 12px;
   margin-bottom: 20px;
@@ -110,7 +110,7 @@
 
 .card .title {
   font-size: .95em;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .card .view-more {
@@ -172,6 +172,7 @@
 }
 
 body {
+  background: #664dc2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,8 +188,11 @@ body {
   top: 0;
   position: absolute;
   width: 100vw;
+  max-width: 1200px;
   max-height: 100vh;
   height: 100%;
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   overflow: hidden;
 }
 
@@ -253,6 +257,19 @@ nav {
           justify-content: center;
   height: 81px;
   width: 100%;
+}
+
+nav a {
+  position: absolute;
+  left: 30px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.5em;
+}
+
+nav a:hover {
+  opacity: 70%;
 }
 
 nav h1 {
@@ -338,5 +355,23 @@ nav .menu:hover {
 
 .inactive {
   display: none;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top .fa {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.top:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
