@@ -32,10 +32,6 @@ a {
     text-decoration: none;
 }
 
-nav a:visited {
-    color: white;
-}
-
 .content-menu {
     width: 100%;
     display: flex;
@@ -62,7 +58,6 @@ nav a:visited {
     }
 }
 
-
 nav {
     position: relative;
     background: $primary-color;
@@ -80,6 +75,9 @@ nav {
         &:hover {
             opacity: 70%;
         }
+    }
+    a:visited {
+        color: white;
     }
     h1 {
         font-family: $heading-font;
@@ -136,6 +134,12 @@ nav {
     .top:hover .fa-caret-down{
         color: lightblue;
     }
+
+    .show-info {
+        margin: 10px 0;
+        color: $primary-color;
+        display: flex;
+    }
 }
 
 .fill-hole {
@@ -151,7 +155,7 @@ nav {
     display: none;
 }
 
-.top {
+.top.season {
     display: flex;
     justify-content: center;
     .fa {
@@ -162,3 +166,4 @@ nav {
         cursor: pointer;
     }
 }
+

@@ -121,6 +121,23 @@
   opacity: 90%;
 }
 
+.img-container.info {
+  border-radius: 12px;
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.img-container.info img {
+  border-radius: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
 @-webkit-keyframes slideInVertical {
   from {
     -webkit-transform: translateY(100%);
@@ -201,10 +218,6 @@ a {
   text-decoration: none;
 }
 
-nav a:visited {
-  color: white;
-}
-
 .content-menu {
   width: 100%;
   display: -webkit-box;
@@ -270,6 +283,10 @@ nav a {
 
 nav a:hover {
   opacity: 70%;
+}
+
+nav a:visited {
+  color: white;
 }
 
 nav h1 {
@@ -348,6 +365,14 @@ nav .menu:hover {
   color: lightblue;
 }
 
+.content .show-info {
+  margin: 10px 0;
+  color: #4f38a4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .fill-hole {
   position: absolute;
   top: 0;
@@ -361,7 +386,7 @@ nav .menu:hover {
   display: none;
 }
 
-.top {
+.top.season {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,12 +395,12 @@ nav .menu:hover {
           justify-content: center;
 }
 
-.top .fa {
+.top.season .fa {
   margin-top: 5px;
   margin-left: 5px;
 }
 
-.top:hover {
+.top.season:hover {
   cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
