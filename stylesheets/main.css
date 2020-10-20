@@ -201,7 +201,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100vw;
-  max-height: 100vh;
   font-family: "Raleway", sans-serif;
 }
 
@@ -210,10 +209,12 @@ body {
   position: absolute;
   width: 100vw;
   max-width: 1200px;
-  max-height: 100vh;
   height: 100%;
   -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
           box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.container.homepage {
   overflow: hidden;
 }
 
@@ -355,14 +356,22 @@ nav .menu:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-height: 100vh;
   height: 100%;
-  overflow: hidden;
   background: white;
   border-radius: 60px 60px 0 0;
   padding: 33px 50px;
   -webkit-animation: .25s ease-in slideInVertical;
           animation: .25s ease-in slideInVertical;
+}
+
+.content.hide-overflow {
+  overflow: hidden;
+}
+
+.content.list {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .content .call-to-action {

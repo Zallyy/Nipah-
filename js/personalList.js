@@ -47,8 +47,8 @@ const shows = [
         current_episode: 4,
         image: "images/shows/majoNoTabitabi.jpeg",
         season: "Fall 2018",
-        opening: "https://www.youtube.com/watch?v=soQjR5_GHXI",
-        ending: "https://www.youtube.com/watch?v=E4_pLpqerqQ",
+        opening: "https://www.youtube.com/watch?v=3JmvuPaFbZw",
+        ending: "https://www.youtube.com/watch?v=X1L7SwPVL6U",
         id: 5
     }
 ]
