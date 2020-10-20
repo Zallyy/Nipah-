@@ -164,10 +164,12 @@
   from {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+    display: block;
   }
   to {
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
+    display: none;
   }
 }
 
@@ -175,10 +177,12 @@
   from {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+    display: block;
   }
   to {
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
+    display: none;
   }
 }
 
@@ -243,6 +247,13 @@ a {
 
 .content-menu .page:nth-child(1) {
   margin-top: 50px;
+}
+
+.content-menu .page:hover .menu-circle {
+  opacity: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .content-menu .page .menu-circle {
@@ -332,6 +343,10 @@ nav .menu:hover {
 }
 
 .content {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,8 +361,8 @@ nav .menu:hover {
   background: white;
   border-radius: 60px 60px 0 0;
   padding: 33px 50px;
-  -webkit-animation: .5s ease-in slideInVertical;
-          animation: .5s ease-in slideInVertical;
+  -webkit-animation: .25s ease-in slideInVertical;
+          animation: .25s ease-in slideInVertical;
 }
 
 .content .call-to-action {
@@ -386,6 +401,11 @@ nav .menu:hover {
   display: none;
 }
 
+.active {
+  -webkit-animation: .25s ease-out slideInVertical;
+          animation: .25s ease-out slideInVertical;
+}
+
 .top.season {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -402,5 +422,34 @@ nav .menu:hover {
 
 .top.season:hover {
   cursor: pointer;
+}
+
+.view-more {
+  color: white;
+}
+
+.view-more:hover {
+  cursor: pointer;
+}
+
+.seasons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.seasons .seasons-options {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.seasons .seasons-options h2:hover {
+  cursor: pointer;
+  opacity: 60%;
 }
 /*# sourceMappingURL=main.css.map */

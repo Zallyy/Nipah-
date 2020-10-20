@@ -44,6 +44,10 @@ a {
         &:nth-child(1) {
             margin-top: 50px;
         }
+        &:hover .menu-circle {
+            opacity: 50%;
+            display: flex;
+        }
         .menu-circle {
             margin-right: 10px;
             margin-bottom: 50px;
@@ -111,6 +115,7 @@ nav {
 }
 
 .content {
+    user-select: none;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -120,7 +125,7 @@ nav {
     background: white;
     border-radius: 60px 60px 0 0;
     padding: 33px 50px;
-    animation: .5s ease-in slideInVertical;
+    animation: .25s ease-in slideInVertical;
 
     .call-to-action {
         z-index: 3;
@@ -155,6 +160,10 @@ nav {
     display: none;
 }
 
+.active {
+    animation: .25s ease-out slideInVertical;
+}
+
 .top.season {
     display: flex;
     justify-content: center;
@@ -164,6 +173,25 @@ nav {
     }
     &:hover {
         cursor: pointer;
+    }
+}
+
+.view-more {
+    color: white;
+}
+.view-more:hover {
+    cursor: pointer;
+}
+
+.seasons {
+    display: flex;
+    flex-direction: column;
+    .seasons-options {
+        align-self: center;
+        h2:hover {
+            cursor: pointer;
+            opacity: 60%;
+        }
     }
 }
 

@@ -10,8 +10,10 @@
 @keyframes slideOutVertical {
     from {
         transform: translateY(0%);
+        display: block;
     }
     to {
         transform: translateY(100%);
+        display: none;
     }
 }

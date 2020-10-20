@@ -11,15 +11,15 @@
         <nav>
             <a href="index.html"> <i class="fa fa-arrow-left"></i></a>
             <h1>Nipah</h1>
-            <div class="menu">
+            <div id='menu' class="menu">
                 <div class="top-bot-menu"></div>
                 <div class="middle-menu"></div>
                 <div class="top-bot-menu"></div>
             </div>
         </nav>
-        <section class="content content-menu inactive ">
+        <section id='content-menu' class="content content-menu inactive ">
             <div class="page">
-                <div class="menu-circle"></div>
+                <div class="menu-circle inactive"></div>
                 <a href="index.html"><h2>Home</h2></a>
             </div>
             <div class="page">
@@ -36,22 +36,24 @@
             </div>
         </section>
         <section class="content">
-            <h2 class="call-to-action">Higurashi No Naku Koro Ni</h2>
+            <h2 id='show-name' class="call-to-action">Higurashi No Naku Koro Ni</h2>
             <div class="img-container info">
-                <img src="images/example.jpg" alt="">
+                <img id='show-img' src="images/example.jpg" alt="">
             </div>
             <div class="show-info">
-                <p class="episode">Episode 3/12</p>
+                <p id='episode' class="episode">Episode 3/12</p>
             </div>
-            <a href="#">
+            <a id='opening' href="#" target='_blank'>
                 <button class="primary-btn">Opening 1</button>
             </a>
-            <a href="#">
+            <a id='ending' href="#" target='_blank'>
                 <button class="primary-btn">Ending 1</button>
             </a>
         </section>
         <div class="fill-hole"></div>
-
     </div>
+    <script src='js/main.js'></script>
+    <script src='js/list.js'></script>
+    <script src='js/template.js'></script>
 </body>
 </html>
