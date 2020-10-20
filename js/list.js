@@ -55,7 +55,7 @@ const shows = [
 
 function ShowTemplate({title, image, id}) {
   return `
-    <a href='info_page.html?=${id}'>
+    <a href='./info_page.html?=${id}'>
     <div class="card">
         <div class="img-container">
             <img src="${image}" alt="show image">
