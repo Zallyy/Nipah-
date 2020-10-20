@@ -70,3 +70,4 @@ function ShowTemplate({title, image, id}) {
 shows.forEach(show => {
     showsEl.innerHTML += ShowTemplate(show)
 })
+
