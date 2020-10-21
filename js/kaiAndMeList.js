@@ -156,12 +156,23 @@ const shows2 = [
         initial_display:"",
         anilist: "https://anilist.co/anime/440/Revolutionary-Girl-Utena/",
         id: 19
+    },
+      
+    {
+        title:"Usagi Drop",
+        episodes:11,
+        current_episode: 11,
+        image:"images/shows/usagi_drop.jpg",
+        status:"watching",
+        initial_display:"",
+        anilist: "https://anilist.co/anime/440/Revolutionary-Girl-Utena/",
+        id: 20
     }
 ];
 
-function ShowTemplate({title, image, id}) {
+function ShowTemplate({title, image, id, status}) {
     return `
-      <a href='./info_page.html?=${id}'>
+      <a class='${status}' href='./info_page.html?=${id}'>
       <div class="card">
           <div class="img-container">
               <img src="${image}" alt="show image">
@@ -172,8 +183,41 @@ function ShowTemplate({title, image, id}) {
       </a>
     `  
   }
-  
+
+
   shows2.forEach(show => {
-      showsEl.innerHTML += ShowTemplate(show)
+    showsEl.innerHTML += ShowTemplate(show)
+    let watchingShows = document.querySelectorAll('.watching') 
+    watchingShows.forEach(show => {
+        show.classList.toggle('inactive')
+    })
   })
   
+const watchingEl = document.getElementById('watching')
+const mainChoice = document.getElementById('main-choice')
+let toggleWatching = false;
+const watchingShows = document.querySelectorAll('.watching') 
+const finshedShows = document.querySelectorAll('.finished') 
+
+watchingEl.addEventListener('click', () => {
+    toggleWatching = !toggleWatching
+    if (toggleWatching) {
+        mainChoice.innerHTML = 'Watching'
+        watchingEl.innerHTML = 'Finished'
+        watchingShows.forEach(show => {
+            show.classList.remove('inactive')
+        }) 
+        finshedShows.forEach(show => {
+            show.classList.add('inactive')
+        })
+    } else {
+        mainChoice.innerHTML = 'Finished'
+        watchingEl.innerHTML = 'Watching'
+        watchingShows.forEach(show => {
+            show.classList.add('inactive')
+        })
+        finshedShows.forEach(show => {
+            show.classList.remove('inactive')
+        })
+    }
+})

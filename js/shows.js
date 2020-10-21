@@ -204,5 +204,15 @@ const shows3 = [
         initial_display:"",
         anilist: "https://anilist.co/anime/440/Revolutionary-Girl-Utena/",
         id: 19
+    },
+    {
+        title:"Usagi Drop",
+        episodes:11,
+        current_episode: 11,
+        image:"images/shows/usagi_drop.jpg",
+        status:"watching",
+        initial_display:"",
+        anilist: "https://anilist.co/anime/440/Revolutionary-Girl-Utena/",
+        id: 20
     }
 ]

@@ -129,6 +129,7 @@ nav {
     }
     &.list {
         height: max-content;
+        min-height: 100%;
     }
 
     .call-to-action {

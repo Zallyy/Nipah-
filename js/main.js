@@ -4,6 +4,7 @@ const topSeason = document.getElementById('top-season')
 const seasonsOptions = document.getElementById('seasons-options')
 const content = document.getElementById('content')
 
+
 menu.addEventListener('click', () => {
     contentMenu.classList.toggle('inactive')
     contentMenu.classList.toggle('active')
@@ -14,3 +15,4 @@ topSeason.addEventListener('click', () => {
     seasonsOptions.classList.toggle('inactive')
 
 })
+

@@ -372,6 +372,7 @@ nav .menu:hover {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  min-height: 100%;
 }
 
 .content .call-to-action {
