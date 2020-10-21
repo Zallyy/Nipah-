@@ -200,6 +200,7 @@ const watchingShows = document.querySelectorAll('.watching')
 const finshedShows = document.querySelectorAll('.finished') 
 
 watchingEl.addEventListener('click', () => {
+    seasonsOptions.classList.toggle('inactive')
     toggleWatching = !toggleWatching
     if (toggleWatching) {
         mainChoice.innerHTML = 'Watching'
