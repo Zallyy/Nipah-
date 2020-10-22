@@ -163,10 +163,20 @@ const shows2 = [
         episodes:11,
         current_episode: 11,
         image:"images/shows/usagi_drop.jpg",
-        status:"watching",
+        status:"finished",
         initial_display:"",
         anilist: "https://anilist.co/anime/440/Revolutionary-Girl-Utena/",
         id: 20
+    },
+    {
+        title:"Denki Gai",
+        episodes:13,
+        current_episode: 13,
+        image:"images/shows/denki_gai.png",
+        status:"finished",
+        initial_display:"inactive",
+        anilist: "https://anilist.co/anime/16353/Love-Lab/",
+        id: 21
     }
 ];
 
