@@ -13,6 +13,5 @@ menu.addEventListener('click', () => {
 
 topSeason.addEventListener('click', () => {
     seasonsOptions.classList.toggle('inactive')
-
 })
 

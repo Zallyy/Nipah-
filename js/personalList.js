@@ -17,8 +17,8 @@ const shows = [
         current_episode: 4,
         image: "images/shows/kamisamaNitta.jpeg",
         season: "Fall 2020",
-        opening: "https://www.youtube.com/watch?v=soQjR5_GHXI",
-        ending: "https://www.youtube.com/watch?v=E4_pLpqerqQ",
+        opening: "https://www.youtube.com/watch?v=2St40996LDw",
+        ending: "https://www.youtube.com/watch?v=tCaq2HKhjRU",
         id: 2
     },
     {
@@ -27,8 +27,8 @@ const shows = [
         current_episode: 4,
         image: "images/shows/kumaBear.jpeg",
         season: "Fall 2020",
-        opening: "https://www.youtube.com/watch?v=soQjR5_GHXI",
-        ending: "https://www.youtube.com/watch?v=E4_pLpqerqQ",
+        opening: "https://www.youtube.com/watch?v=VVsZRUQ8YH4",
+        ending: "https://www.youtube.com/watch?v=VVsZRUQ8YH4",
         id: 3
     },
     {
@@ -37,8 +37,8 @@ const shows = [
         current_episode: 4,
         image: "images/shows/tonikakuKawaii.jpeg",
         season: "Fall 2020",
-        opening: "https://www.youtube.com/watch?v=soQjR5_GHXI",
-        ending: "https://www.youtube.com/watch?v=E4_pLpqerqQ",
+        opening: "https://www.youtube.com/watch?v=Cv1Y2chJRWM",
+        ending: "https://www.youtube.com/watch?v=lBxLxceGTpY",
         id: 4
     },
     {
@@ -47,7 +47,7 @@ const shows = [
         current_episode: 4,
         image: "images/shows/majoNoTabitabi.jpeg",
         season: "Fall 2018",
-        opening: "https://www.youtube.com/watch?v=3JmvuPaFbZw",
+        opening: "https://www.youtube.com/watch?v=QdIm6_Tpb8M",
         ending: "https://www.youtube.com/watch?v=X1L7SwPVL6U",
         id: 5
     }

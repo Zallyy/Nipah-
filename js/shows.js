@@ -15,8 +15,8 @@ const shows3 = [
         current_episode: 4,
         image: "images/shows/kamisamaNitta.jpeg",
         season: "Fall 2020",
-        opening: "https://www.youtube.com/watch?v=soQjR5_GHXI",
-        ending: "https://www.youtube.com/watch?v=E4_pLpqerqQ",
+        opening: "https://www.youtube.com/watch?v=2St40996LDw",
+        ending: "https://www.youtube.com/watch?v=tCaq2HKhjRU",
         id: 2
     },
     {
@@ -25,8 +25,8 @@ const shows3 = [
         current_episode: 4,
         image: "images/shows/kumaBear.jpeg",
         season: "Fall 2020",
-        opening: "https://www.youtube.com/watch?v=soQjR5_GHXI",
-        ending: "https://www.youtube.com/watch?v=E4_pLpqerqQ",
+        opening: "https://www.youtube.com/watch?v=VVsZRUQ8YH4",
+        ending: "https://www.youtube.com/watch?v=VVsZRUQ8YH4",
         id: 3
     },
     {
@@ -35,8 +35,8 @@ const shows3 = [
         current_episode: 4,
         image: "images/shows/tonikakuKawaii.jpeg",
         season: "Fall 2020",
-        opening: "https://www.youtube.com/watch?v=soQjR5_GHXI",
-        ending: "https://www.youtube.com/watch?v=E4_pLpqerqQ",
+        opening: "https://www.youtube.com/watch?v=Cv1Y2chJRWM",
+        ending: "https://www.youtube.com/watch?v=lBxLxceGTpY",
         id: 4
     },
     {
@@ -45,7 +45,7 @@ const shows3 = [
         current_episode: 4,
         image: "images/shows/majoNoTabitabi.jpeg",
         season: "Fall 2018",
-        opening: "https://www.youtube.com/watch?v=3JmvuPaFbZw",
+        opening: "https://www.youtube.com/watch?v=QdIm6_Tpb8M",
         ending: "https://www.youtube.com/watch?v=X1L7SwPVL6U",
         id: 5
     },
@@ -198,7 +198,7 @@ const shows3 = [
     {
         title:"Revolutionary Girl Utena",
         episodes:39,
-        current_episode: 23,
+        current_episode: 39,
         image:"images/shows/utena.jpg",
         status:"finished",
         initial_display:"",
@@ -210,7 +210,7 @@ const shows3 = [
         episodes:11,
         current_episode: 11,
         image:"images/shows/usagi_drop.jpg",
-        status:"watching",
+        status:"finished",
         initial_display:"",
         anilist: "https://anilist.co/anime/440/Revolutionary-Girl-Utena/",
         id: 20

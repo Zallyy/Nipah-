@@ -32,11 +32,18 @@ a {
     text-decoration: none;
 }
 
+nav a:visited {
+    color: white;
+}
+
 .content-menu {
     width: 100%;
     display: flex;
     align-items: center;
     color: $primary-color;
+    a:visited {
+        color: $primary-color;
+    }
     .page {
         display: flex;
         justify-content: center;
@@ -199,4 +206,3 @@ nav {
         }
     }
 }
-
